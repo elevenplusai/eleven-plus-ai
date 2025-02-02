@@ -1,3 +1,4 @@
+import {ReactNode} from "react";
 import heroImg from './assets/hero-img.png';
 import logoImg from './assets/logo.png';
 import feature1 from './assets/feature1.png';
@@ -8,7 +9,7 @@ import year4 from './assets/year4.png';
 import year5 from './assets/year5.png';
 import year6 from './assets/year6.png';
 
-const MilestoneCard = ({year, description, children}) => (
+const MilestoneCard = ({year, description, children}: { year: string, description: string, children: ReactNode }) => (
     <div className="flex flex-col items-center space-y-4">
         {children}
         <div className="font-hanken text-xl font-bold">Year {year}</div>
